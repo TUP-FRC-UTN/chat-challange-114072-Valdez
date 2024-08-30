@@ -1,0 +1,8 @@
+<h1>Sala de Chat</h1>
+<h2>Conversación</h2>
+<div>
+    <li *ngFor="let msj of listaMensajes">{{ msj }}</li>
+</div>
+<app-entradaUsuario [usuario] = "'Carlos'" (emitir)="agregarMensaje($event)"></app-entradaUsuario>
+<app-entradaUsuario [usuario] = "'Ana'" (emitir)="agregarMensaje($event)"></app-entradaUsuario>
+
