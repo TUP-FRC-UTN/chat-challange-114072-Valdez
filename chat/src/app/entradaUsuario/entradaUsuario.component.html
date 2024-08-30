@@ -1,5 +1,7 @@
-<h3>Usuario:{{usuario}}</h3>
+<div class="container mt-3">
+  <h3>Usuario: {{usuario}}</h3>
 
-<h4>Mensaje</h4>
-<textarea name="" id="" rows="4" cols="50" [(ngModel)]="mensaje"></textarea>
-<button (click)="enviarMensaje()">Guardar</button>
+  <h4>Mensaje</h4>
+  <textarea name="" id="" rows="4" cols="50" [(ngModel)]="mensaje"></textarea>
+  <button class="btn btn-primary" (click)="enviarMensaje()">Guardar</button>
+</div>
