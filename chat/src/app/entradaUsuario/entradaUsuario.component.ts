@@ -16,7 +16,7 @@ export class EntradaUsuarioComponent  {
   mensaje: string = '';
 
   enviarMensaje() {
-    this.emitir.emit(this.usuario + ' - ' + this.mensaje);
+    this.emitir.emit(this.usuario + ': ' + this.mensaje);
     this.mensaje = '';
   }
 
