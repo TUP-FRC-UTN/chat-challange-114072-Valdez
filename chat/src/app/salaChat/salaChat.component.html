@@ -1,10 +1,17 @@
-<div class="container">
-  <h1>Sala de Chat</h1>
-  <h2>Conversación</h2>
-  <div>
+<div class="container" style="border: 2px solid blue;">
+  <h1 class="mt-5" >Sala de Chat</h1>
+
+  <div style="border: 2px solid red;">
+      <h2 class="mt-5">Conversación</h2>
       <li *ngFor="let msj of listaMensajes">{{ msj }}</li>
   </div>
-  <app-entradaUsuario [usuario] = "'Carlos'" (emitir)="agregarMensaje($event)"></app-entradaUsuario>
-  <app-entradaUsuario [usuario] = "'Ana'" (emitir)="agregarMensaje($event)"></app-entradaUsuario>
+  <div class="row mt-3">
+    <div class="col-6" style="border: 2px solid green;">
+      <app-entradaUsuario [usuario] = "'Carlos'" (emitir)="agregarMensaje($event)"></app-entradaUsuario>
+    </div>
+    <div class="col-6" style="border: 2px solid green;">
+      <app-entradaUsuario [usuario] = "'Ana'" (emitir)="agregarMensaje($event)"></app-entradaUsuario>
+    </div>
+  </div>
 </div>
 
